@@ -1,0 +1,31 @@
+AUSTIN STAR SERVICES – WEBSITE
+==============================
+
+This folder IS the complete website. index.html must stay at the top level, next to the about/, services/,
+portfolio/, contact/ and assets/ folders. Do not move files into another folder.
+
+TO VIEW ON YOUR COMPUTER
+  Double-click index.html. It opens in your web browser, and every page, image and button works.
+  (The quote form only sends emails once the site is online.)
+
+TO PUT IT LIVE (pick one)
+  Netlify (free, easiest):
+    1. Go to https://app.netlify.com/drop
+    2. Drag THIS WHOLE FOLDER (the unzipped one) onto the page. It's live in a few seconds.
+  cPanel / GoDaddy / any web host:
+    Upload EVERYTHING inside this folder into public_html (or www / htdocs).
+    index.html must end up directly inside public_html, not in a subfolder.
+  Vercel:
+    Option A (no GitHub): install the Vercel CLI, open a terminal IN THIS FOLDER and run:  npx vercel --prod
+    Option B (GitHub): put these files at the TOP of a repository (index.html in the root, not in a folder),
+      then on vercel.com: Add New > Project > Import the repo > Framework Preset: Other > Deploy.
+      If the files are inside a folder in the repo, set Settings > Build & Deployment > Root Directory
+      to that folder, then redeploy.
+    vercel.json in this folder already tells Vercel there is nothing to build.
+  GitHub Pages:
+    Put these files at the TOP of the repository (index.html in the root), then go to
+    Settings > Pages > Branch: main / (root) > Save.
+
+AFTER IT'S LIVE
+  Send one test from the quote form. FormSubmit emails a one-time activation link to
+  lateraustinstar512@yahoo.com. Click it, and quote requests will arrive from then on.

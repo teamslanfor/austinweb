@@ -1,0 +1,12 @@
+{
+  "name": "austin-star-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Austin Star Services LLC, Austin TX",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js",
+    "dev": "npm run build && node server.js"
+  },
+  "engines": { "node": ">=18" }
+}

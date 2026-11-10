@@ -1,0 +1,61 @@
+<!--meta
+{"key":"contact","path":"/contact/","title":"Contact & Free Quote | Austin Star Services, Austin, TX","description":"Contact Austin Star Services: call (512) 203-0765 or request a free quote. 9300 South IH-35, Suite A-500, Austin, TX 78748. Monday–Friday 9 AM–5 PM."}
+-->
+<section class="page-head">
+  <img src="/assets/img/living-blue.webp" alt="" width="1000" height="665">
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span aria-current="page">Contact</span></nav>
+    <h1>Contact us</h1>
+    <p class="lead">Call us or request a free quote. We’ll get back to you during business hours.</p>
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <div class="container contact-layout">
+    <aside class="location-card reveal">
+      <h2 style="font-size:1.5rem">Get in touch</h2>
+      <ul class="info-list">
+        <li><span class="ic">{{icon:phone}}</span><div><small>Phone</small><a href="{{site.phoneHref}}">{{site.phone}}</a></div></li>
+        <li><span class="ic">{{icon:mail}}</span><div><small>Email</small><a href="mailto:{{site.email}}">{{site.email}}</a></div></li>
+        <li><span class="ic">{{icon:pin}}</span><div><small>Office</small><a href="{{mapsLink}}" target="_blank" rel="noopener">9300 South IH-35, Suite A-500<br>Austin, TX 78748</a></div></li>
+        <li><span class="ic">{{icon:license}}</span><div><small>License</small><strong>TACLB26861E</strong></div></li>
+      </ul>
+      <h3 style="font-size:1rem">Office hours</h3>
+      <ul class="hours-table">
+        <li><span>Monday – Friday</span><strong>9:00 AM – 5:00 PM</strong></li>
+        <li><span>Saturday – Sunday</span><strong>Closed</strong></li>
+      </ul>
+      <a href="{{site.phoneHref}}" class="btn btn-white btn-block">{{icon:phone}}<span>Call now</span></a>
+    </aside>
+    <div class="contact-form-card reveal">
+      <h2 style="font-size:1.5rem">Request a free quote</h2>
+      <p style="color:var(--muted)">Fields marked <span style="color:var(--danger)">*</span> are required.</p>
+      <form id="quote-form" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="name">Full name <span class="req">*</span></label><input id="name" name="name" type="text" autocomplete="name" required maxlength="80"><span class="err" role="alert"></span></div>
+          <div class="field"><label for="phone">Phone <span class="req">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" placeholder="(512) 555-0123"><span class="err" role="alert"></span></div>
+          <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"><span class="err" role="alert"></span></div>
+          <div class="field"><label for="service">Service needed</label><select id="service" name="service"><option value="">Not sure yet</option>{{serviceOptions}}</select></div>
+          <div class="field full"><label for="message">How can we help? <span class="req">*</span></label><textarea id="message" name="message" required maxlength="2000" placeholder="E.g. AC not cooling upstairs, about 2,000 sq ft home near Buda"></textarea><span class="err" role="alert"></span></div>
+          <div class="hp" aria-hidden="true"><label for="_honey">Leave this empty</label><input id="_honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+        </div>
+        <div class="form-foot">
+          <small data-form-note>We only use your details to reply to your request.</small>
+          <button type="submit" class="btn btn-primary"><span class="spinner" aria-hidden="true"></span><span>Send request</span><span class="btn-label-icon">{{icon:send}}</span></button>
+        </div>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="emergency reveal" style="margin-bottom:28px">
+      <span class="ic">{{icon:alert}}</span>
+      <div><h2>Urgent AC or flood problem?</h2><p>Don’t wait for an email reply. Call us now on {{site.phone}}.</p></div>
+      <a href="{{site.phoneHref}}" class="btn btn-hot">{{icon:phone}}<span>Call now</span></a>
+    </div>
+    <div class="map-frame reveal"><iframe title="Map showing Austin Star Services, 9300 South IH-35, Austin, TX 78748" src="https://maps.google.com/maps?q=9300%20South%20IH-35%2C%20Austin%2C%20TX%2078748&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  </div>
+</section>
